@@ -4,7 +4,7 @@
 <img src="./src/imagens/SelectCharacter.jpg">
 
 ### Sobre:
-Esse é um projeto foi inspirado no desenho Dragon Ball, a estrutura dele foi inspirada no projeto MapaDevWeek.
+Esse é um projeto foi inspirado no desenho Dragon Ball, a estrutura dele foi baseada no projeto MapaDevWeek.
 <br>
 
 ### 🛠 Tecnologias
