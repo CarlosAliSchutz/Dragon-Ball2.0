@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Ball Character Select</title>
+    <link rel="stylesheet" href="./src/css/variaveis.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/fontes.css" />
+    <link rel="stylesheet" href="./src/css/animacoes.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+</head>
+
+<body>
+    <main>
+        <header class="cabecalho">
+            <h1 class="titulo">Character Select</h1>
+        </header>
+        <div class="character-select">
+            <div class="character-large character-player-1">
+                <img src="./src/imagens/goku.png" alt="Character selected player 1" id="character-player-1" />
+                <div class="name">
+                    <h2 id="character-name-1">Goku</h2>
+                </div>
+            </div>
+
+            <ul class="character-list player-1">
+                <li class="character selected" id="goku" data-name="Goku">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/goku-icon.png" alt="Goku Character" />
+                </li>
+
+                <li class="character" id="vegeta" data-name="Vegeta">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/vegeta-icon.png" alt="Vegeta Character" />
+                </li>
+
+                <li class="character" id="gohan" data-name="Gohan">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/gohan-icon.png" alt="Gohan Character" />
+                </li>
+
+                <li class="character" id="piccolo" data-name="Piccolo">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/piccolo-icon.png" alt="Piccolo Character" />
+                </li>
+
+                <li class="character" id="bills" data-name="Bills">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/bills-icon.png" alt="Bills Character" />
+                </li>
+
+                <li class="character" id="jiren" data-name="Jiren">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/jiren-icon.png" alt="Jiren Character" />
+                </li>
+
+                <li class="character" id="freeza" data-name="Freeza">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/freeza-icon.png" alt="Freeza Character" />
+                </li>
+
+                <li class="character" id="majin-buu" data-name="Majin Buu">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/majin-buu-icon.png" alt="Majin Buu Character" />
+                </li>
+
+                <li class="character" id="trunks" data-name="Trunks">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/trunks-icon.png" alt="Trunks Character" />
+                </li>
+
+                <li class="character" id="goku-black" data-name="Goku Black">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/goku-black-icon.png" alt="Goku Black" />
+                </li>
+            </ul>
+
+            <img class="versus"
+                src="./src/imagens/vs.png"
+                alt="Versus" />
+
+            <ul class="character-list player-2">
+                <li class="character" id="goku" data-name="Goku">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/goku-icon.png" alt="Goku Character" />
+                </li>
+
+                <li class="character" id="vegeta" data-name="Vegeta">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/vegeta-icon.png" alt="Vegeta Character" />
+                </li>
+
+                <li class="character" id="gohan" data-name="Gohan">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/gohan-icon.png" alt="Gohan Character" />
+                </li>
+
+                <li class="character" id="piccolo" data-name="Piccolo">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/piccolo-icon.png" alt="Piccolo Character" />
+                </li>
+
+                <li class="character" id="bills" data-name="Bills">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/bills-icon.png" alt="Bills Character" />
+                </li>
+
+                <li class="character" id="jiren" data-name="Jiren">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/jiren-icon.png" alt="Jiren Character" />
+                </li>
+
+                <li class="character" id="freeza" data-name="Freeza">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/freeza-icon.png" alt="Freeza Character" />
+                </li>
+
+                <li class="character" id="majin-buu" data-name="Majin Buu">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/majin-buu-icon.png" alt="Majin Buu Character" />
+                </li>
+
+                <li class="character" id="trunks" data-name="Trunks">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/trunks-icon.png" alt="Trunks Character" />
+                </li>
+
+                <li class="character player-2-selected" id="goku-black" data-name="Goku Black">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/goku-black-icon.png" alt="Goku Black" />
+                </li>
+            </ul>
+
+            <div class="character-large character-player-2">
+                <img src="./src/imagens/goku-black.png" alt="Character selected player 2" id="character-player-2" />
+                <div class="name">
+                    <h2 id="character-name-2">Goku Black</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

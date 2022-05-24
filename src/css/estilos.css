@@ -1,0 +1,214 @@
+body {
+    font-family: 'ssf4';
+    background: var(--cor-secundaria);
+}
+
+body::before{
+content: '';
+background-image: url("../imagens/fundo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute; 
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    font-family: 'ssf4', Courier, monospace;
+    display: flex;
+    justify-content: center;
+}   
+        
+header h1{
+    color: darkorange;
+    font-size: 4rem;
+    text-shadow: 5px 0 20px black;
+}
+
+.character-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.character-select .character-large {
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+}
+
+.character-select .character-large img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.versus {
+    position: absolute;
+    height: 150px;
+}
+
+
+.character-select .character-large .name h2{
+color: floralwhite;
+position: absolute;
+bottom: -1rem;
+width: 100%;
+font-size: 3rem;
+text-shadow: 5px 0 10px black;
+}
+
+.character-select .character-list.player-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    position: absolute;
+    left: 2%;
+    top: 1%;
+    
+}
+
+.character-select .character-list .character {
+    border: solid 2px white;
+    background-image: url("../imagens/fundo-icon.jpg");
+    background-position: center; 
+    background-size: cover;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.character-select .character-list.player-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+}
+
+.character-select .character-list .player-2 .character {
+    border: solid 2px white;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.character-select .character-list .character img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    filter: saturate(0%);
+}
+
+.character-select .character-list .character img:hover{
+    filter: saturate(100%);
+    transition: 0.3s;
+}
+
+.character-select .character-list .character.selected img{
+    filter: saturate(100%);
+}
+
+.character-select .character-list .character.selected {
+    border: 2px solid rgb(204, 203, 255);
+    animation: c-glowing-blue .5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.player-1 .character:hover{
+    transform: scale(1.37);
+    animation: c-glowing-blue .5s ease-in-out infinite;
+    animation-direction: alternate;
+    z-index: 3;
+}
+
+.character-select .character-list.player-2-selected {
+    border: 2px solid rgb(204, 203, 255);
+    animation: c-glowing-red .5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.character-select .character-list.player-2-selected .character :hover{
+    transform: scale(1.07);
+    animation: c-glowing-red .5s ease-in-out infinite;
+    animation-direction: alternate;
+    z-index: 3;
+}
+
+.player-2-selected {
+    border: 2px solid rgb(255, 214, 214);
+    animation: c-glowing-red .5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.player-2 .character:hover{
+    transform: scale(1.37);
+    animation: c-glowing-red .5s ease-in-out infinite;
+    animation-direction: alternate;
+    z-index: 3;
+}
+
+.character-select .character-list .player-2-selected img{
+    filter: saturate(100%);
+}
+
+.character-select .character-list .character .tag{
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    transition: opacity .3 ease-in-out;
+    animation: alternate;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.character-select .character-list .character.selected .tag{
+    display: block;
+}
+
+.character-select .character-list .player-2-selected .tag{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    transition: opacity .3 ease-in-out;
+    animation: alternate;
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
