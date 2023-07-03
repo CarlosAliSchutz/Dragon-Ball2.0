@@ -1,9 +1,9 @@
-<h1 align="center">Dragon-Ball-2.0</h1>
+<h1 align="center">Dragon-Ball</h1>
 <h3 align="center">Menu de jogo para Dragon Ball</h3>
 
 <img src="./src/imagens/SelectCharacter.jpg">
 
-### Sobre:
+### 🥊 Sobre:
 Esse é um projeto foi inspirado no desenho Dragon Ball, a estrutura dele foi baseada no projeto MapaDevWeek.
 <br>
 
