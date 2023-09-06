@@ -3,14 +3,12 @@
 
 <img src="./src/imagens/SelectCharacter.jpg">
 
-### 🥊 Sobre:
+## 🥊 Sobre:
 Esse é um projeto foi inspirado no desenho Dragon Ball, a estrutura dele foi baseada no projeto MapaDevWeek.
-<br>
 
-### 🛠 Tecnologias
+## Link
+- Solução: [Ir para solução](https://carlosalischutz.github.io/Dragon-Ball2.0/)
 
-As seguintes ferramentas foram usadas na construção do projeto:
+## 🛠 Tecnologias
 
-- [HTML5]
-- [CSS3]
-- [JS]
+[![My Skills](https://skillicons.dev/icons?i=html,css,js&perline=3)](https://skillicons.dev)
